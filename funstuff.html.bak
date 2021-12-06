@@ -20,14 +20,11 @@
 			
 			}
 		
-			body {
-				background-image:url('spiderman.jpg');
-			}
 		</style>
 		
 	</head>
 
-	<body>
+	<body style="background-image:url('spiderman.jpg');">
 		
 		<p>Welcome to fun stuff</p>
 		

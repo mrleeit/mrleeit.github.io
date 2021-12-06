@@ -1,8 +1,4 @@
 <html>
-<head>
-<link rel="stylesheet" href="mycss.css"></link>
-
-</head>
 	<body style="background-color:#131166">
 
 	<p style="color:#CCFF99;font-size:32pt;font-family:Impact;text-align:center;">My website on spiderman</p>
