@@ -1,0 +1,103 @@
+<!-- Introduces Javascript and forms  --> 
+
+<html>
+	<head>
+		<title>Bunnies! Admin Login</title>
+		<link rel="stylesheet" href="styles.css">
+		<script type="text/javascript">
+		  writeRandomQuote = function () {
+		    var quotes = new Array();
+		    quotes[0] = "Action is the real measure of intelligence.";
+		    quotes[1] = "Baseball has the great advantage over cricket of being sooner ended.";
+		    quotes[2] = "Every goal, every action, every thought, every feeling one experiences, whether it be consciously or unconsciously known, is an attempt to increase one's level of peace of mind.";
+		    quotes[3] = "A good head and a good heart are always a formidable combination.";
+		    var rand = Math.floor(Math.random()*quotes.length);
+		    document.write("<p class='quote'>"+quotes[rand]+"</p>");
+		  }
+		 
+		
+			/*variable sets amount of attempts to login*/
+			var login_attempts=3;
+			
+			/*function to check userid & password*/
+			function check(form)
+			{
+				 /*code runs if entered username and password are correct*/
+				 if(form.username.value == "admin" && form.password.value == "password")
+				 {
+					/*opens the target page while username & password matches*/
+					window.open('admin.html');
+				 }
+				 
+				 /*code runs if username & password is incorrect */
+				 else
+				 {
+					 /*reduce attempts to login counter*/
+					login_attempts=login_attempts-1;
+					
+					 /*deactivate form if attempts counter reaches 0 */
+					if(login_attempts==0)
+					{
+						alert("No More Login Attempts Available");
+						
+						document.getElementById("username").disabled=true;
+						document.getElementById("password").disabled=true;
+						document.getElementById("login").disabled=true;						
+						document.getElementById("loginform").disabled=true;
+					}
+					else
+					{
+						/*displays warning message if still have attempts to login left*/
+						alert("Error Password or Username! Only " +login_attempts+ " Login Attempts Available");
+							
+					}
+					  
+				 }
+				 
+			}
+			
+		</script>
+
+		
+	</head>
+	
+	<body>
+		<div class="wrapper">
+
+			<div class="headingdiv">
+				<p class="title">Bunnies R Us</p>
+			</div>
+			
+			
+
+			<div class="leftdiv">
+			
+				<p><a href="index.html">Home</a></p>		
+				<p><a href="products.html">Products</a></p>
+				<p><a href="contact.html">Contact Us</a></p>			
+				<p><a href="login.html">Admin Login</a></p>	
+			
+			</div>
+			
+			<div class="rightdiv">
+			
+				<p class="heading">Head Bunny Login Page</p>
+				<script type="text/javascript">writeRandomQuote();</script>
+				
+				<form name="loginform">
+					<p>Username: <input type="text" id="username"/></p>
+					<p>Password: <input type="password" id="password"/></p>
+					<p><input type="button" onclick="check(this.form)" id="login" value="Login"/></p>		
+				</form>
+			
+				<p><a href="javascript:history.back(1)">Previous Page</a> | <a href="javascript:history.back(-1)">Next Page</a> | <a href="javascript:window.print();">Print Page</a></p>		
+			
+			</div>
+
+		
+		</div>		
+		
+			
+	</body>
+
+</html>

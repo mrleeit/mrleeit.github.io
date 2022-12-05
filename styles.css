@@ -1,0 +1,101 @@
+	/*DIV PADDING HANDLING BETWEEN BROWSERS  */
+	div {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	
+	}
+	
+	.wrapper {
+		width: 100%; /*PERCENTAGE OF WINDOW OR WIDTH IN PIXELS  */
+		margin-left: auto; /*DIV CENTERING ON PAGE  */
+		margin-right: auto; /*DIV CENTERING ON PAGE */
+	}
+	
+	.headingdiv {
+		background-color: #000000;
+		background-image: url('bunny.jfif');
+		width: 100%;
+		height: 170;
+		padding: 10px;
+
+	}
+	
+	.leftdiv {
+		float: left;
+		background-color: #FFCCFF;
+		width: 20%;
+		height: 1100;
+		padding: 10px;
+	}
+	
+	.rightdiv {
+		float: left;
+		width: 80%;
+		height: 1100;
+		padding: 10px;
+		text-align: center;
+	}
+	
+	
+	body {
+		background-image:url('bunny2.jpg');
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+		background-size:100% auto;
+		background-color:#000000;
+	}
+			
+	p {	
+		color:#FFFFFF;
+		font-family:Arial;
+		font-size:14pt;
+	}
+	
+	a {
+		color:#000000;
+		font-family:Comic Sans Ms;
+		font-size:20pt;
+		font-weight: bold;
+	}
+	
+	.title{
+		color:#FFFF00;
+		text-align: center;
+		font-family:Comic Sans MS;
+		font-weight:bold; 
+		font-size:45pt;
+		line-height: 0pt; /*SET LINE SPACING */
+		
+	}
+	
+	.heading {
+		color:#FFFFFF;
+		font-family:Comic Sans MS;
+		font-weight:bold; 
+		font-size:30pt;
+		line-height: 0pt; /*SET LINE SPACING */
+	}
+	
+	.quote {
+		color:#FFFFFF;
+		background-color:#000000;
+		font-family:Brush Script MT;
+		font-size:30pt;
+		text-align:center;
+		color:#FFFF00;
+	}	
+	
+	/*SNAKE CANVAS  */
+	canvas {
+		display:inline-block;
+		position: absolute;
+		border: 10px solid #009BFF;
+		top: 750;
+		left: 420;
+
+	}
+	
+	
+	
+	
