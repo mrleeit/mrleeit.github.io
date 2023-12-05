@@ -1,0 +1,171 @@
+<HTML>
+	<head>
+	
+		<script type="text/javascript">
+		
+			//DATE TIME DISPLAY
+			// create a function to update the date and time
+			function updateDateTime() {
+			// create a new 'Date' object
+			const now = new Date();
+
+			// get the current date and time as a string
+			const currentDateTime = now.toDateString() + ", " + now.toLocaleTimeString();
+
+			// update the 'textContent' property of the 'span' element with the 'id' of 'datetime'
+			document.querySelector('#datetime').textContent = "It is now: " + currentDateTime;
+			}
+
+			// call the 'updateDateTime' function every second
+			setInterval(updateDateTime, 1000);
+
+
+			// QUOTE GENERATOR
+			writeRandomQuote = function () {
+			var quotes = new Array();
+			quotes[0] = "'We cannot solve problems with the kind of thinking we employed when we came up with them.' - Albert Einstein";
+			quotes[1] = "'Learn as if you will live forever, live like you will die tomorrow.' - Mahatma Gandhi";
+			quotes[2] = "'Stay away from those people who try to disparage your ambitions. Small minds will always do that, but great minds will give you a feeling that you can become great too.' - Mark Twain";
+			quotes[3] = "'I can't tell you how many times I've been given a no. Only to find that a better, brighter, bigger yes was right around the corner.' - Arlan Hamilton";
+			quotes[4] = "'Make sure your worst enemy doesn't live between your own two ears.' -Laird Hamilton";
+			quotes[5] = "'It is only when we take chances, when our lives improve. The initial and the most difficult risk that we need to take is to become honest.' - Walter Anderson";
+			quotes[6] = "'More is lost by indecision than wrong decision.' - Marcus Tullius Cicero";
+			quotes[7] = "'Success is not final; failure is not fatal: It is the courage to continue that counts.' - Winston S. Churchill";
+			quotes[8] = "'Don't let yesterday take up too much of today.' - Will Rogers";
+			quotes[9] = "'Experience is a hard teacher because she gives the test first, the lesson afterwards.' - Vernon Sanders Law";
+			quotes[10] = "'The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty.' - Winston Churchill";
+			quotes[11] = "Either you run the day or the day runs you.' - Jim Roh";
+			quotes[12] = "The standard you walk past, is the standard you accept.' - David Hurley";
+			quotes[13] = "'You cannot plow a field by turning it over in your mind. To begin, begin.' - Gordon B. Hinckley";
+			quotes[14] = "'Be miserable. Or motivate yourself. Whatever has to be done, it's always your choice.' - Wayne Dyer";
+			quotes[15] = "'The only one who can tell you “you can't win” is you and you don't have to listen.' - Jessica Ennis";
+			quotes[16] = "Rivers know this: there is no hurry. We shall get there some day.' - A.A. Milne";
+			quotes[17] = "If you can't yet do great things, do small things in a great way.' - Napoleon Hill";
+			quotes[18] = "'Courage doesn't always roar. Sometimes courage is a quiet voice at the end of the day saying, 'I will try again tomorrow.'' - Mary Anne Radmacher";
+			quotes[19] = "'The reason we struggle with insecurity is because we compare our behind-the-scenes with everyone else's highlight reel.' - Steve Furtick";
+			quotes[20] = "'You cannot always control what goes on outside. But you can always control what goes on inside.' - Wayne Dyer";
+			
+			var rand = Math.floor(Math.random()*quotes.length);
+			document.write(quotes[rand]);
+		  }
+		</script>
+
+
+	</head>
+	
+	<body>
+	
+		<img src="totoro.png">
+		
+		<!-- JavaScript Quote Display here --> 
+		<h2><script type="text/javascript">writeRandomQuote();</script></h2>
+		
+		<img src="totoro_sm.png">
+
+		<!-- JavaScript Date/Time Display here --> 
+		<h1 id="datetime"></h2>
+		
+		<!-- Embed Google Search bar --> 
+		<form action="https://www.google.com/search" 
+		method="get"target="_blank" id="search-form">
+		<input name="q" type="text" placeholder="Google Search" 
+		autocomplete="off" autofocus>
+		</form>
+
+		<p>
+			<a href="https://mail.google.com"><img src="gmail.png"  alt="Gmail"></img></a> 
+		
+			<a href="https://drive.google.com"><img src="googledrive.png"  alt="Google Drive"></img></a> 
+			
+			<a href="https://jmss-vic.compass.education"><img src="compass.png"  alt="Compass"></img></a> 
+		
+			<a href="https://jmss.instructure.com"><img src="canvas.png"  alt="Canvas"></img></a> 
+		
+		</p>	
+	
+		
+	
+		<h2>
+			Useful Links
+		</h2>	
+		
+		<p>
+			<a href="https://edupay.eduweb.vic.gov.au">Edupay</a> 
+		</p>
+		<p>
+			<a href="https://vic.ems360.com.au/">EMS360</a> 
+		</p>
+		<p>
+			<a href="https://reports.jmss.vic.edu.au/">Accelerus Reports</a> 
+		</p>
+		
+		<p>
+			<a href="https://outlook.office365.com/mail">Outlook (Education) Email</a> 
+		</p>
+		<p>
+			<a href="https://eduvic.webex.com/webappng/sites/eduvic/dashboard?siteurl=eduvic">WebEx</a> 
+		</p>
+		<p>
+			<a href="https://online.clickview.com.au/">Clickview</a> 
+		</p>
+		<p>
+			<a href="https://www.jacplus.com.au/">Jacaranda LearnOn</a> 
+		</p>
+		<p>
+			<a href="https://www.classtools.net/random-name-picker">Random Name Picker</a> 
+		</p>
+		
+		<!-- Embed Google Calendar --> 	
+		<iframe src="https://calendar.google.com/calendar/embed?src=schoolcalendar%40jmss.vic.edu.au&ctz=Australia%2FSydney" style="border: 0" width="600" height="400" frameborder="0" scrolling="no"></iframe>
+		
+		
+		<h2>
+			Favourite YouTube Playlists
+		</h2>	
+		
+		<h3>Web Design 101 Course</h3>
+				
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=x9ZFO83OyotXIpSq&amp;list=PLXC_gcsKLD6n7p6tHPBxsKjN5hA_quaPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		
+		
+		
+		<h3>Star Talk with Neil Degrasse Tyson</h3>
+		
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=Cn2x-3YKBQ2K3Kd0&amp;list=PLnaXrumrax3UL1jd8I8Si6sUa4KN7Em_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			
+			
+		<h3> Just Keep Thinking - Food Science</h3>
+		
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=86GJNsrgkr0u0RbH&amp;list=PLYDewJnWyZrmeDvjLIojJPr58vKrt56M3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				
+				
+		<h2>
+			Favourite Spotify Playlists
+		</h2>	
+			
+			<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7zDp9BnnJeoaGztSzaNSIm?utm_source=generator" width="400" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+			
+			
+			
+		<h1>
+					JavaScript Snake Game
+		</h1>
+		<!-- JavaScript Snake Game here--> 		
+		<style>
+			
+			/*SNAKE CANVAS  */
+			canvas {
+				display:inline-block;
+				position: relative;
+				border: 10px solid #009BFF;
+				top: 0;
+				left: 0;
+
+			}
+		</style>
+		<script type="text/javascript" src="snake.js"></script>
+		
+	</body>
+
+</HTML>
+

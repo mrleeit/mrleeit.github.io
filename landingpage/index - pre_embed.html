@@ -1,0 +1,131 @@
+<HTML>
+	<head>
+	
+	<title>My Landing Page</title>
+	
+	<script>
+		// create a function to update the date and time
+		function updateDateTime() {
+		// create a new `Date` object
+		const now = new Date();
+
+		// get the current date and time as a string
+		const currentDateTime = now.toDateString() + ", " + now.toLocaleTimeString();
+
+		// update the `textContent` property of the `span` element with the `id` of `datetime`
+		document.querySelector('#datetime').textContent = "It is now: " + currentDateTime;
+
+		// call the `updateDateTime` function every second
+		setInterval(updateDateTime, 1000);
+	</script>
+
+
+
+
+	</head>
+	
+	<body>
+	
+		<img src="totoro.png">
+		
+		
+		<img src="totoro_sm.png">
+
+		<h2 id="datetime"></h2>
+	
+	
+		<p>
+			<a href="https://mail.google.com"><img src="gmail.png"  alt="Gmail"></img></a> 
+		
+			<a href="https://drive.google.com"><img src="googledrive.png"  alt="Google Drive"></img></a> 
+			
+			<a href="https://jmss-vic.compass.education"><img src="compass.png"  alt="Compass"></img></a> 
+		
+			<a href="https://jmss.instructure.com"><img src="canvas.png"  alt="Canvas"></img></a> 
+		
+		</p>	
+	
+	<style>
+input {
+border-radius: 24px;
+border: 1px solid #dfe1e5;
+background: #fff;  
+padding: 20px;
+display: flex;
+z-index: 3;
+width: 638px;
+height: 44px;
+margin: 20px;
+}
+
+input:hover{
+box-shadow: 0 0 8px 1px #e1e1e1;
+}
+</style>
+
+<p>
+<!-- Embed Google Search bar --> 
+<form action="https://www.google.com/search" method="get"target="_blank" id="search-form">
+<input name="q" type="text" placeholder="Google Search" autocomplete="off" autofocus></form>
+</p>
+
+		
+	
+		<h2>
+			Useful Links
+		</h2>	
+		
+		<p>
+			<a href="https://edupay.eduweb.vic.gov.au">Edupay</a> 
+		</p>
+		<p>
+			<a href="https://vic.ems360.com.au/">EMS360</a> 
+		</p>
+		<p>
+			<a href="https://reports.jmss.vic.edu.au/">Accelerus Reports</a> 
+		</p>
+		
+		<p>
+			<a href="https://outlook.office365.com/mail">Outlook (Education) Email</a> 
+		</p>
+		<p>
+			<a href="https://eduvic.webex.com/webappng/sites/eduvic/dashboard?siteurl=eduvic">WebEx</a> 
+		</p>
+		<p>
+			<a href="https://online.clickview.com.au/">Clickview</a> 
+		</p>
+		<p>
+			<a href="https://www.jacplus.com.au/">Jacaranda LearnOn</a> 
+		</p>
+		<p>
+			<a href="https://www.classtools.net/random-name-picker">Random Name Picker</a> 
+		</p>
+		
+		
+		<h2> Calender</h2>
+		
+		<iframe src="https://calendar.google.com/calendar/embed?src=james.lee%40jmss.vic.edu.au&ctz=Australia%2FSydney" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+		
+		
+		
+		map<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7066.483720545009!2d145.13222884538595!3d-37.91265802861538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad66acfb70adb87%3A0x6e7260d416149bef!2sJohn%20Monash%20Science%20School!5e0!3m2!1sen!2sau!4v1701384530855!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		
+		
+		
+		
+		<h2>
+			Favourite YouTube Playlists
+		</h2>	
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/F6nwZUkBeas?si=jmh35RHfYfdn00gP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		
+		<h2>
+			Favourite Spotify Playlists
+		</h2>	
+			
+		<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXbYM3nMM0oPk?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+			
+		
+	</body>
+
+</HTML>
+
