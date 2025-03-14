@@ -1,0 +1,166 @@
+
+<html>
+<head>
+
+
+<style>
+
+body{
+
+	font-family: arial;
+	font-size: 12pt;
+	background-color:#FFCCCC;
+}
+
+.slidecontainer {
+  width: 1000;
+  padding: 10px;
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:#FFFFFF;
+}
+
+.resultpanel {
+	background-color: #FFFFCC;
+	padding: 2px;
+}
+
+#current, #reliable, #authorative, #purpose, #result {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+#current:hover, #reliable:hover, #authorative:hover, #purpose:hover, #result:hover {
+  opacity: 1;
+}
+
+#current::-webkit-slider-thumb, #reliable::-webkit-slider-thumb, #authorative::-webkit-slider-thumb, #purpose::-webkit-slider-thumb, #result::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+#current::-moz-range-thumb, #reliable::-moz-range-thumb, #authorative::-moz-range-thumb, #purpose::-moz-range-thumb, #result::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+#result {
+ height: 35px;
+}
+
+#result::-webkit-slider-thumb {
+  height: 35px;
+  width: 50px;
+  background: #88cc00;
+}
+
+
+div.left { width: 100; float:left; padding: 2px;}
+div.center { width: 750; float:left; padding: 2px;}
+div.right { width: 100; float:left; padding: 2px;}
+br {clear:both;}
+input{width: 100%;}
+
+.moreinfo {
+font-size: 10pt;
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="slidecontainer">
+
+<h1>ROAR TEST - Test how <b>reliable</b> is your information</h1>
+
+<form name="ROARform">
+
+
+
+<p class="choice">R: How <b>RECENT</b> is the information?<br>
+<span class="moreinfo">(Is it up-to-date?)</span><br>
+<div class="left">OLD</div>
+<div class="center"><input type="range" id="current" min="0" max="10" value="5" onChange="calculate();"></div>
+<div class="right">RECENT</div>
+<br>&nbsp;
+</p>
+
+<p class="choice">O: Is the <b>OBJECTIVE</b> of the source to inform you of facts or persuade you? <br>
+<span class="moreinfo">(Is the language used strong, aggressive or emotive? Does it appear strongly biased? Is it interpreting more than just providing facts?)</span><br>
+<div class="left">PERSUADE</div>
+<div class="center"><input type="range"id="purpose" min="0" max="10" value="5" onChange="calculate();"></div>
+<div class="right">INFORM</div>
+<br>&nbsp;
+</p>
+
+<p class="choice">A: How <b>AUTHORATIVE</b> is the source (Author) of the information? <br>
+<span class="moreinfo">(Is the source an expert? Is it from a respected government or education source? Is it backed by reputable sources? Is it peer reviewed?)</span><br>
+<div class="left">LOW</div>
+<div class="center"><input type="range"id="authorative" min="0" max="10" value="5" onChange="calculate();"></div>
+<div class="right">HIGH</div>
+<br>&nbsp;
+</p>
+
+
+<p class="choice">R: How <b>RELEVANT</b> is the information? <br>
+<span class="moreinfo">(Does it really relate (correlation doesn't always mean causation) or prove its intention? Does it fit the context? Does it answer the question? Is it accurate, free from errors or distortion?)</span><br>
+<div class="left">IRRELEVANT</div>
+<div class="center"><input type="range" id="reliable" min="0" max="10" value="5" onChange="calculate();"></div>
+<div class="right">RELEVANT</div>
+<br>&nbsp;
+</p>
+<div class="resultpanel">
+<p class="choice">RELIABILITY OF INFORMATION:<br>
+<div class="left">POOR</div>
+<div class="center"><input type="range" id="result" min="0" max="40" value="20" onChange="calculate();"></div>
+<div class="right">GOOD</div>
+<br>
+</p>
+</div>
+
+<script language="javascript">
+	var current = document.getElementById("current");
+	var reliable = document.getElementById("reliable");
+	var authorative = document.getElementById("authorative");
+	var purpose = document.getElementById("purpose");
+	var result = document.getElementById("result");
+	
+	//on change
+	function calculate() {
+	
+	result.value = parseInt(current.value) + parseInt(reliable.value) + parseInt(authorative.value) + parseInt(purpose.value);
+	
+}	
+	
+</script>
+
+
+
+</form>
+<p>
+When researching, refrain from forming an opinion yet. First do the research, then use those facts to develop your opinion.
+</p>
+<p>
+What people are guilty of in social media is they have an opinion, and they go digging to find facts that support their opinion, and its difficult for them to change their minds because they go in with a heavy amount of bias.
+</p>
+<a href="https://www.lifehacker.com.au/2020/06/how-to-teach-kids-the-difference-between-facts-and-opinions/" target="_blank">Source</a>
+
+
+</div>
+
+</body>
+</html>
