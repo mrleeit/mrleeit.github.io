@@ -93,7 +93,7 @@ font-size: 10pt;
 
 <p class="choice">R: How <b>RECENT</b> is the information?<br>
 <span class="moreinfo">(Is it up-to-date?)</span><br>
-<div class="left">OLD</div>
+<div class="left">OLD/UNKNOWN</div>
 <div class="center"><input type="range" id="current" min="0" max="10" value="5" onChange="calculate();"></div>
 <div class="right">RECENT</div>
 <br>&nbsp;
@@ -101,15 +101,15 @@ font-size: 10pt;
 
 <p class="choice">O: Is the <b>OBJECTIVE</b> of the source to inform you of facts or persuade you? <br>
 <span class="moreinfo">(Is the language used strong, aggressive or emotive? Does it appear strongly biased? Is it interpreting more than just providing facts?)</span><br>
-<div class="left">PERSUADE</div>
+<div class="left">OPINIONATIVE/INTERPRETATIVE</div>
 <div class="center"><input type="range"id="purpose" min="0" max="10" value="5" onChange="calculate();"></div>
-<div class="right">INFORM</div>
+<div class="right">OBJECTIVE/FACTUAL</div>
 <br>&nbsp;
 </p>
 
 <p class="choice">A: How <b>AUTHORATIVE</b> is the source (Author) of the information? <br>
 <span class="moreinfo">(Is the source an expert? Is it from a respected government or education source? Is it backed by reputable sources? Is it peer reviewed?)</span><br>
-<div class="left">LOW</div>
+<div class="left">LOW/UNKNOWN</div>
 <div class="center"><input type="range"id="authorative" min="0" max="10" value="5" onChange="calculate();"></div>
 <div class="right">HIGH</div>
 <br>&nbsp;
@@ -117,7 +117,7 @@ font-size: 10pt;
 
 
 <p class="choice">R: How <b>RELEVANT</b> is the information? <br>
-<span class="moreinfo">(Does it really relate (correlation doesn't always mean causation) or prove its intention? Does it fit the context? Does it answer the question? Is it accurate, free from errors or distortion?)</span><br>
+<span class="moreinfo">(Does it really relate (correlation doesn't always mean causation) or prove its intention? Does it fit the context? Does it answer the question? Is it useful, accurate, free from errors or distortion?)</span><br>
 <div class="left">IRRELEVANT</div>
 <div class="center"><input type="range" id="reliable" min="0" max="10" value="5" onChange="calculate();"></div>
 <div class="right">RELEVANT</div>
